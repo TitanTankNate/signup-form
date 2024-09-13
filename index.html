@@ -28,32 +28,48 @@
 
                 <form action="./nothing" class="form" name="signup-form" method="submit">
                     <ul class="form-links-left">
+                        <!-- First Name -->
                         <li class="field1">
-                            <label for="first-name" name="first-name-label">First Name</label>
-                            <input type="text" name="first-name">
+                            <label for="first-name"name="first-name-label">First Name</label>
+                            <input  type="text"
+                                    id="first-name"
+                                    pattern="\D*"
+                                    required>
                         </li>
+                        <!-- Email Address -->
                         <li class="field2">
                             <label for="email" name="email-label">Email Address</label>
-                            <input type="email" name="email">
+                            <input  type="email"
+                                    id="email"
+                                    required>
                         </li>
+                        <!-- Password Enter -->
                         <li class="field3">
                             <label for="password-enter" name="password-enter-label">Password</label>
-                            <input type="password" name="password-enter">
+                            <input type="password" id="password-enter">
                         </li>
                     </ul>
-                    
+
                     <ul class="form-links-right">
+                        <!-- Last Name -->
                         <li class="field4">
-                            <label for="last-name" name="last-name-label">Last Name</label>
-                            <input type="text" name="last-name">
+                            <label for="last-name" name="last-name-label" required>Last Name</label>
+                            <input  type="text"
+                                    id="last-name"
+                                    pattern="\D*"
+                                    required>
                         </li>
+                        <!-- Phone Number -->
                         <li class="field5">
                             <label for="phone-number" name="Phone Number">Phone Number</label>
-                            <input type="tel" name="phone-number">
+                            <input  type="tel"
+                                    id="phone-number"
+                                    pattern="\d{10}">
                         </li>
+                        <!-- Password Confirm -->
                         <li class="field6">
-                            <label for="password-confirm" name="password-confirm-label">Confirm Password</label>
-                            <input type="password" name="password-confirm">
+                            <label for="password-confirm" name="password-confirm-label" required>Confirm Password</label>
+                            <input type="password" id="password-confirm">
                         </li>
                     </ul>
                 </form>
