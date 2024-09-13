@@ -1,3 +1,77 @@
-p {
-    font-size: 48px;
+/*CSS RESET AND NORMALIZATION   CSS CSS CSS CSS CSS CSS CSS CSS CSS  */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+
+
+
+
+/* THEME TH TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH   */
+
+root {
+    /* Fonts */
+
+
+    /* Colors */
+}
+
+
+
+
+
+/* UNIVERSAL STYLING    UNI UNI UNI UNI UNI UNI UNI UNI UNI UNI UNI  */
+.wrapper {
+    /* Display declarations */
+    display: flex;
+}
+
+
+
+/* SIDEBAR  s   s   s   s   s   s   s   s   s   s   s   s   s   s   s*/
+.sidebar {
+    /* DEBUG BORDERS */
+    border: 2px solid #FF0000;
+    
+}
+
+
+
+/* CONTENT  c   c   c   c   c   c   c   c   c   c   c   c   c   c   c*/
+.content {
+    /* DEBUG BORDERS */
+    border: 2px solid #00FF00;
+}
+
+
+/*  /* HEADER   h   h   h   h   h   */
+header {
+    /* DEBUG BORDERS */
+    border: 2px solid #00FFFF;
+}
+
+
+/*  /* FORM f   f   f   f   f   f   */
+.form-wrapper {
+    /* DEBUG BORDERS */
+    border: 2px solid #FF00FF;
+}
+
+form {
+    /* Display declarations */
+    display: flex;
+}
+
+
+/*  /* FOOTER   f   f   f   f   f   */
+footer {
+    /* DEBUG BORDERS */
+    border: 2px solid #FFFF00;
+}
+
+
+
+/* DEBUG BORDERS */
+/* border: 2px solid #000000; */
