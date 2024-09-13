@@ -34,19 +34,29 @@
                             <input  type="text"
                                     id="first-name"
                                     pattern="\D*"
+                                    minlength="1"
+                                    maxlength="24"
                                     required>
+                                    <!-- I noticed that my RegEx accommodates any unicode standard typing
+                                     character, but it also supports use of emoji.-->
                         </li>
                         <!-- Email Address -->
                         <li class="field2">
                             <label for="email" name="email-label">Email Address</label>
                             <input  type="email"
                                     id="email"
+                                    minlength="6"
+                                    maxlength="40"
                                     required>
                         </li>
                         <!-- Password Enter -->
                         <li class="field3">
                             <label for="password-enter" name="password-enter-label">Password</label>
-                            <input type="password" id="password-enter">
+                            <input  type="password"
+                                    id="password-enter"
+                                    minlength="16"
+                                    maxlength="32"
+                                    required>
                         </li>
                     </ul>
 
@@ -57,6 +67,8 @@
                             <input  type="text"
                                     id="last-name"
                                     pattern="\D*"
+                                    minlength="6"
+                                    maxlength="40"
                                     required>
                         </li>
                         <!-- Phone Number -->
@@ -64,12 +76,18 @@
                             <label for="phone-number" name="Phone Number">Phone Number</label>
                             <input  type="tel"
                                     id="phone-number"
-                                    pattern="\d{10}">
+                                    pattern="\d*"
+                                    minlength="10"
+                                    maxlength="11">
                         </li>
                         <!-- Password Confirm -->
                         <li class="field6">
                             <label for="password-confirm" name="password-confirm-label" required>Confirm Password</label>
-                            <input type="password" id="password-confirm">
+                            <input  type="password"
+                                    id="password-confirm"
+                                    minlength="16"
+                                    maxlength="32"
+                                    required>
                         </li>
                     </ul>
                 </form>
