@@ -7,17 +7,18 @@
 
     <link rel="stylesheet" href="./stylesheet.css">
     <script src="./javascript.js" defer></script>
+
+    <!-- Font Preconnects-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <div class="sidebar">
-            <div class="logo-wrapper">
-                <div class="logo">Logo.jpg</div>
-                <div class="logo-text">Test</div>
-                <p>Image/copyright</p>
-            </div>
+            <img class="logo" src="./images/PikoPiko-horizontal_logo-main.svg" alt="PikoPiko Company Logo">
+            <div class="copyright-text">Copyright</div>
         </div>
-
         <div class="content">
             <header class="content-header">
                 <p>Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! </p>
@@ -36,6 +37,7 @@
                                     pattern="\D*"
                                     minlength="1"
                                     maxlength="24"
+                                    tabindex="1"
                                     required>
                                     <!-- I noticed that my RegEx accommodates any unicode standard typing
                                      character, but it also supports use of emoji.-->
@@ -47,6 +49,7 @@
                                     id="email"
                                     minlength="6"
                                     maxlength="40"
+                                    tabindex="3"
                                     required>
                         </li>
                         <!-- Password Enter -->
@@ -56,6 +59,7 @@
                                     id="password-enter"
                                     minlength="16"
                                     maxlength="32"
+                                    tabindex="5"
                                     required>
                         </li>
                     </ul>
@@ -69,6 +73,7 @@
                                     pattern="\D*"
                                     minlength="6"
                                     maxlength="40"
+                                    tabindex="2"
                                     required>
                         </li>
                         <!-- Phone Number -->
@@ -78,7 +83,8 @@
                                     id="phone-number"
                                     pattern="\d*"
                                     minlength="10"
-                                    maxlength="11">
+                                    maxlength="11"
+                                    tabindex="4">
                         </li>
                         <!-- Password Confirm -->
                         <li class="field6">
@@ -87,6 +93,7 @@
                                     id="password-confirm"
                                     minlength="16"
                                     maxlength="32"
+                                    tabindex="6"
                                     required>
                         </li>
                     </ul>

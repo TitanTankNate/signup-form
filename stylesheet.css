@@ -1,3 +1,28 @@
+/* FONT IMPORT */
+.titillium-web-light {
+    font-family: "Titillium Web", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .titillium-web-regular {
+    font-family: "Titillium Web", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .titillium-web-semibold {
+    font-family: "Titillium Web", system-ui;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .titillium-web-bold {
+    font-family: "Titillium Web", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+
 /*CSS RESET AND NORMALIZATION   CSS CSS CSS CSS CSS CSS CSS CSS CSS  */
 body {
     padding: 0;
@@ -18,14 +43,28 @@ ul {
 
 /* THEME TH TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH   */
 
-root {
+:root {
     /* Fonts */
 
 
     /* Colors */
+    --background-color: #00302a;
+    --font-default-color: #ffffff;
 }
 
+body {
+    background-color: var(--background-color, #0F220F);
+}
 
+p {
+    font-family: Titillium Web, sans-serif;
+    color: var(--font-default-color,#ffffff)
+}
+
+header p {
+    font-size: 24px;
+    font-weight: 600;
+}
 
 
 
@@ -33,21 +72,54 @@ root {
 .wrapper {
     /* Display declarations */
     display: flex;
+    height: 100vh;
 }
 
 
 
 /* SIDEBAR  s   s   s   s   s   s   s   s   s   s   s   s   s   s   s*/
 .sidebar {
+    /* Display declarations */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Transforms and Constraints */
+    width: 33vw;
+
     /* DEBUG BORDERS */
     border: 2px solid #FF0000;
     
+}
+
+.logo {
+    /* Display declarations */
+    display: flex;
+
+    /* Transforms and Constraints */
+    position: relative;
+    top: 40%;
+
+}
+
+.copyright-text{
+    /* Display declarations */
+    display: flex;
+    justify-content: center;
+
+    /* DEBUG BORDERS */
+    border: 2px solid #FF0000;
 }
 
 
 
 /* CONTENT  c   c   c   c   c   c   c   c   c   c   c   c   c   c   c*/
 .content {
+    /* Display declarations */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     /* DEBUG BORDERS */
     border: 2px solid #00FF00;
 }
