@@ -9,6 +9,57 @@
     <script src="./javascript.js" defer></script>
 </head>
 <body>
-    <p>Test</p>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="logo-wrapper">
+                <div class="logo">Logo.jpg</div>
+                <div class="logo-text">Test</div>
+                <p>Image/copyright</p>
+            </div>
+        </div>
+        <div class="content">
+            <header class="content-header">
+                <p>Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! Sample text! </p>
+            </header>
+            <div class="form-wrapper">
+                <p>Form header text</p>
+                <form action="./nothing" class="form" name="signup-form" method="submit">
+                    <ul class="form-links-left">
+                        <li class="field1">
+                            <label for="first-name" name="first-name-label">First Name</label>
+                            <input type="text" name="first-name">
+                        </li>
+                        <li class="field2">
+                            <label for="email" name="email-label">Email Address</label>
+                            <input type="email" name="email">
+                        </li>
+                        <li class="field3">
+                            <label for="password-enter" name="password-enter-label">Password</label>
+                            <input type="password" name="password-enter">
+                        </li>
+                    </ul>
+                    <ul class="form-links-right">
+                        <li class="field4">
+                            <label for="last-name" name="last-name-label">Last Name</label>
+                            <input type="text" name="last-name">
+                        </li>
+                        <li class="field5">
+                            <label for="phone-number" name="Phone Number">Phone Number</label>
+                            <input type="tel" name="phone-number">
+                        </li>
+                        <li class="field6">
+                            <label for="password-confirm" name="password-confirm-label">Confirm Password</label>
+                            <input type="password" name="password-confirm">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <footer>
+                <button class="submit" type="button">Submit Button</button>
+                <p>Log in recommendation text.</p>
+            </footer>
+        </div>
+    </div>
+    
 </body>
 </html>
