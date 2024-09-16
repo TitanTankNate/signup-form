@@ -17,7 +17,9 @@
     <div class="wrapper">
         <img src="./images/squiggle-base.svg" alt="Squiggle background" class="squiggle">
         <div class="sidebar">
-            <img class="logo" src="./images/PikoPiko-horizontal_logo-main.svg" alt="PikoPiko Company Logo">
+            <img class="logo"
+                src="./images/PikoPiko-horizontal_logo-main.svg"
+                alt="PikoPiko Company Logo">
             <div class="copyright-text">Copyright ©2024 Piko Piko, LLC and Nathan Janota</div>
         </div>
         <div class="content">
@@ -39,6 +41,7 @@
                                     minlength="1"
                                     maxlength="24"
                                     tabindex="1"
+                                    placeholder="First"
                                     required>
                                     <!-- I noticed that my RegEx accommodates any unicode standard typing
                                      character, but it also supports use of emoji.-->
@@ -51,6 +54,7 @@
                                     minlength="6"
                                     maxlength="40"
                                     tabindex="3"
+                                    placeholder="email@domain.co.jp"
                                     required>
                         </li>
                         <!-- Password Enter -->
@@ -58,7 +62,7 @@
                             <label for="password-enter" name="password-enter-label">パスワード*</label>
                             <input  type="password"
                                     id="password-enter"
-                                    minlength="16"
+                                    minlength="8"
                                     maxlength="32"
                                     tabindex="5"
                                     required>
@@ -75,6 +79,7 @@
                                     minlength="1"
                                     maxlength="24"
                                     tabindex="2"
+                                    placeholder="Last"
                                     required>
                         </li>
                         <!-- Phone Number -->
@@ -85,6 +90,7 @@
                                     pattern="\d*"
                                     minlength="10"
                                     maxlength="11"
+                                    placeholder="18005882300"
                                     tabindex="4">
                         </li>
                         <!-- Password Confirm -->
@@ -92,7 +98,7 @@
                             <label for="password-confirm" name="password-confirm-label" required>パスワードを認証する*</label>
                             <input  type="password"
                                     id="password-confirm"
-                                    minlength="16"
+                                    minlength="8"
                                     maxlength="32"
                                     tabindex="6"
                                     required>

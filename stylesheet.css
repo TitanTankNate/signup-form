@@ -1,4 +1,5 @@
 /* FONT IMPORT */
+/* All fonts from fonts.google.com */
 .titillium-web-light {
     font-family: "Titillium Web", system-ui;
     font-weight: 300;
@@ -24,24 +25,14 @@
   }
 
 /*CSS RESET AND NORMALIZATION   CSS CSS CSS CSS CSS CSS CSS CSS CSS  */
-body {
+/* Remove annoying padding (opinion) */
+body, ul, p {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-
-    padding: 0;
-    margin: 0;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-}
-
+/* Remove annoying text decoration (opinion) */
 a {
     text-decoration: none;
     color: inherit;
@@ -50,13 +41,9 @@ a {
 
 
 
-
 /* THEME TH TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH  TH   */
 
 :root {
-    /* Fonts */
-
-
     /* Colors */
     --background-color: #00302a;
     --accent-color: #07463f;
@@ -86,6 +73,7 @@ p {
 .squiggle {
     /* Font and color declarations */
     filter: invert(19%) sepia(12%) saturate(6265%) hue-rotate(140deg) brightness(93%) contrast(94%);
+    
     /* Transforms and constraints */
     position: absolute;
     scale: 225%;
@@ -94,6 +82,7 @@ p {
     rotate: 60deg;
     width: clamp(260px, 33vw, 375px);
 }
+
 
 
 /* SIDEBAR  s   s   s   s   s   s   s   s   s   s   s   s   s   s   s*/
@@ -159,6 +148,7 @@ header p {
     line-height: 2.5rem;
 }
 
+
 /*  /* FORM f   f   f   f   f   f   */
 .form-wrapper {
     /* Font and color declarations */
@@ -221,10 +211,12 @@ input {
 }
 
 input:user-valid {
+    /* CBPM */
     border: 2px solid var(--valid-color,white);
 }
 
 input:user-invalid {
+    /* CBPM */
     border: 2px solid #FF0000;
 }
 
@@ -232,6 +224,13 @@ label {
     /* Font and color declarations */
     font-weight: 600;
     color: #FFFFFF;
+}
+
+p.error-message {
+    /* Font and color declarations */
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff0000;
 }
 
 
@@ -267,7 +266,18 @@ button.submit:hover {
     border: 2px solid var(--font-default-color);
 }
 
+button.submit:disabled {
+    /* Font and color declarations */
+    opacity: 10%;
+    color: var(--font-default-color, white);
+    background-color: var(--accent-color);
+
+    /* CBPM */
+    border: 2px solid var(--accent-color);
+}
+
 footer a {
+    /* Font and color declarations */
     color: var(--valid-color);
     font-weight: 600;
 }
