@@ -42,6 +42,11 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 
@@ -236,6 +241,35 @@ footer {
     padding-top: 12px;
     /* DEBUG BORDERS */
     /* border: 2px solid #FFFF00; */
+}
+
+button.submit {
+    /* Font and color declarations */
+    font-family: Titillium Web, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--font-default-color, white);
+    background-color: var(--accent-color);
+
+    /* CBPM */
+    padding: 2px 8px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+button.submit:hover {
+    /* Font and color declarations */
+    background-color: var(--valid-color);
+    color: #000000;
+
+    /* CBPM */
+    border: 2px solid var(--font-default-color);
+}
+
+footer a {
+    color: var(--valid-color);
+    font-weight: 600;
 }
 
 

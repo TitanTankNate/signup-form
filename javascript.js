@@ -14,3 +14,11 @@ submitButton.addEventListener("click", () => {
 
     form.reset();
 });
+
+// Password checker
+
+// Take password from input 1
+// Take password from input 2
+// Compare input 1 to input 2
+// If passwords match, do nothing
+// If passwords don't match, trigger error and show message
