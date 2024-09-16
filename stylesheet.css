@@ -76,6 +76,21 @@ header p {
 }
 
 
+.squiggle {
+    /* Font and color declarations */
+    filter: invert(19%) sepia(12%) saturate(6265%) hue-rotate(140deg) brightness(93%) contrast(94%);
+    /* Transforms and constraints */
+    position: absolute;
+    scale: 225%;
+    top: -250px;
+    left: -250px;
+    rotate: 60deg;
+    width: clamp(300px, 33vw, 375px);
+
+    /* DEBUG BORDERS */
+    border: 2px solid #0000FF;
+}
+
 
 /* SIDEBAR  s   s   s   s   s   s   s   s   s   s   s   s   s   s   s*/
 .sidebar {
