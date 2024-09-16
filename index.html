@@ -18,7 +18,7 @@
         <img src="./images/squiggle-base.svg" alt="Squiggle background" class="squiggle">
         <div class="sidebar">
             <img class="logo" src="./images/PikoPiko-horizontal_logo-main.svg" alt="PikoPiko Company Logo">
-            <div class="copyright-text">Copyright</div>
+            <div class="copyright-text">Copyright ©2024 Piko Piko, LLC and Nathan Janota</div>
         </div>
         <div class="content">
             <header class="content-header">
@@ -26,13 +26,13 @@
             </header>
 
             <div class="form-wrapper">
-                <p>Form header text</p>
+                <p>お 問い合わせ！</p>
 
                 <form action="./nothing" class="form" name="signup-form" method="submit">
                     <ul class="form-links-left">
                         <!-- First Name -->
                         <li class="field1">
-                            <label for="first-name"name="first-name-label">First Name</label>
+                            <label for="first-name"name="first-name-label">First Name*</label>
                             <input  type="text"
                                     id="first-name"
                                     pattern="\D*"
@@ -45,7 +45,7 @@
                         </li>
                         <!-- Email Address -->
                         <li class="field2">
-                            <label for="email" name="email-label">Email Address</label>
+                            <label for="email" name="email-label">Email Address*</label>
                             <input  type="email"
                                     id="email"
                                     minlength="6"
@@ -55,7 +55,7 @@
                         </li>
                         <!-- Password Enter -->
                         <li class="field3">
-                            <label for="password-enter" name="password-enter-label">Password</label>
+                            <label for="password-enter" name="password-enter-label">Password*</label>
                             <input  type="password"
                                     id="password-enter"
                                     minlength="16"
@@ -68,12 +68,12 @@
                     <ul class="form-links-right">
                         <!-- Last Name -->
                         <li class="field4">
-                            <label for="last-name" name="last-name-label" required>Last Name</label>
+                            <label for="last-name" name="last-name-label" required>Last Name*</label>
                             <input  type="text"
                                     id="last-name"
                                     pattern="\D*"
-                                    minlength="6"
-                                    maxlength="40"
+                                    minlength="1"
+                                    maxlength="24"
                                     tabindex="2"
                                     required>
                         </li>
@@ -89,7 +89,7 @@
                         </li>
                         <!-- Password Confirm -->
                         <li class="field6">
-                            <label for="password-confirm" name="password-confirm-label" required>Confirm Password</label>
+                            <label for="password-confirm" name="password-confirm-label" required>Confirm Password*</label>
                             <input  type="password"
                                     id="password-confirm"
                                     minlength="16"
